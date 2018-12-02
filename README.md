@@ -1,12 +1,12 @@
 # GunViolenceMapreduce
 
-##Dataset Link
+## Dataset Link
 https://www.kaggle.com/jameslko/gun-violence-data
 
-##Project Description
+## Project Description
 This is a map-reduce job to find the state with the most deaths in gun violence. MapReduce job has been written in python langague. 
 
-##Dataset Description
+## Dataset Description
 
 This is a gun violence dataset from 2013 to 2018. Dataset is collected from Kaggle. Dataset has 240k rows and 29 columns. 
 
