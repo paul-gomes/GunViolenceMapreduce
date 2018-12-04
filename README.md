@@ -16,12 +16,20 @@ This is a gun violence dataset from 2013 to 2018. Dataset is collected from Kagg
 - **VERACITY** : Source of the data is http://www.gunviolencearchive.org/, which is a non-profit corporation and provides information about the gun violence in the US. Therefore, it is safe to assume that the **veracity** of the dataset is reliable  
 - **VALUE**    : we can extract valuable information from the dataset to perform actions against gun violence. 
 
-## Bigdata question
+
+## Bigdata question #1
+
+- For each state, calculate the sum of the number of gun violence incidents.
+
+## Bigdata result Chart
+![numKilledPerState](https://github.com/paul-gomes/GunViolenceMapreduce/blob/master/NumOfIncidentsPerState/result/resultChart.PNG "Clustered column chart for number of incidents per state")
+
+## Bigdata question #2
 
 - For each state, calculate the sum of the number of killed.
 
 ## Bigdata result Chart
-![numKilledPerState](https://github.com/paul-gomes/GunViolenceMapreduce/blob/master/NumOfKilledPerState/result/resultChart.PNG "Clustered column chart for number of kills per state")
+![numKilledPerState](https://https://github.com/paul-gomes/GunViolenceMapreduce/blob/master/NumOfKilledPerState/result/resultChart.PNG "Clustered column chart for number of kills per state")
 
 
 
