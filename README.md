@@ -20,8 +20,8 @@ This is a gun violence dataset from 2013 to 2018. Dataset is collected from Kagg
 
 - For each state, calculate the sum of the number of killed.
 
-## Bigdata result
-
+## Bigdata result Chart
+![numKilledPerState](https://github.com/paul-gomes/GunViolenceMapreduce/blob/master/NumOfKilledPerState/result/resultChart.PNG "Clustered column chart for number of kills per state")
 
 
 
