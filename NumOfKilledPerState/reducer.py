@@ -1,33 +1,34 @@
-import csv
 
 o = open("./result/readyForReducer.txt", "r")
-s = open("./result/result.txt", "w")
+r = open("./result/result.csv", "w")
 
 totalNumberKilled = 0
 oldKey = None
 
 
-
-with open('./result/result.txt', 'wb') as csvfile:
-    fieldnames = ['State', 'Num_of_persons_killed']
-    writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
-
-    #writer.writeheader()
+# output column headers
+r.write('state,NumberKilled\n')
  
-    for line in o:
-        data_mapped = line.strip().split("\t")
-        if len(data_mapped) != 2:
-            continue
-        thisKey, thisNumberKilled = data_mapped
+for line in o:
+    # use the line strip and split methods and assign to a list named data
+    data_mapped = line.strip().split("\t")
 
-        if oldKey and oldKey != thisKey:
-            writer.writerow({'State': oldKey, 'Num_of_persons_killed': totalNumberKilled})
-            oldKey = thisKey
-            totalNumberKilled = 0
+    if len(data_mapped) != 2:
+        continue
+    thisKey, thisNumberKilled = data_mapped
 
+    if oldKey and oldKey != thisKey:
+        # output the last key value pair result
+        r.write(thisKey + ',' + str(totalNumberKilled)+'\n')
+        
         oldKey = thisKey
-        totalNumberKilled += long(thisNumberKilled)
+        totalNumberKilled = 0
 
-    if oldKey != None:
-        writer.writerow({'State': oldKey, 'Num_of_persons_killed': totalNumberKilled})
+    oldKey = thisKey
+    totalNumberKilled += long(thisNumberKilled)
+
+if oldKey != None:
+    # output the final entry when done
+    r.write(thisKey + ',' + str(totalNumberKilled)+'\n')
+        
 
