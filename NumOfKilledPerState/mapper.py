@@ -1,3 +1,24 @@
+
+import csv
+
+c = open("result/mapperOutput.txt", "w")
+
+with open("../dataset/gun-violence-data.csv", "rb") as csvFile:
+    reader = csv.reader(csvFile, delimiter=',')
+    line_count = 0;
+    for row in reader:
+        if (line_count != 0):
+            if (len(row) == 29):
+                state = row[2]
+                numberOfKilled = row[5]
+                c.write(state + "\t" + numberOfKilled + "\n")
+        line_count += 1
+
+c.close()
+
+
+
+
 # reader = open("googleplaystore.csv", "r")
 # writer = open("mapperOutput.txt", "w")
 # line_count = 1
@@ -14,20 +35,4 @@
 # reader.close()
 # writer.close()
 
-import csv
-
-c = open("result/mapperOutput.txt", "w")
-
-with open("../dataset/gun-violence-data.csv", "rb") as csvFile:
-    reader = csv.reader(csvFile, delimiter=',')
-    line_count = 0;
-    for row in reader:
-        if (line_count != 0):
-            if (len(row) == 29):
-                state = row[2].replace("$", "")
-                numberOfKilled = row[5]
-                c.write(state + "\t" + numberOfKilled + "\n")
-        line_count += 1
-
-c.close()
 
