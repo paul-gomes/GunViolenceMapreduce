@@ -22,19 +22,20 @@ This is a gun violence dataset from 2013 to 2018. Dataset is collected from Kagg
 - For each state, calculate the number of gun violence incidents.
 
 ## Bigdata result chart
-![numKilledPerState](https://github.com/paul-gomes/GunViolenceMapreduce/blob/master/NumOfIncidentsPerState/result/resultChart.PNG "Clustered column chart for number of incidents per state")
+![numIncidentsPerState](https://github.com/paul-gomes/GunViolenceMapreduce/blob/master/image/NumOfIncidentsResultChart.PNG "Clustered column chart for number of incidents per state")
 
 ## Bigdata qustion #2
 - For each state, calculate the sum of the number of injured
 
 ## Bigdata result chart
+![numInjuredPerState](https://github.com/paul-gomes/GunViolenceMapreduce/blob/master/image/NumOfInjuredResultChart.PNG "Clustered column chart for number of injured per state")
 
 ## Bigdata question #3
 
 - For each state, calculate the sum of the number of killed.
 
 ## Bigdata result chart
-![numKilledPerState](https://github.com/paul-gomes/GunViolenceMapreduce/blob/master/NumOfKilledPerState/result/resultChart.PNG "Clustered column chart for number of kills per state")
+![numKilledPerState](https://github.com/paul-gomes/GunViolenceMapreduce/blob/master/image/NumOfKilledResultChart.PNG "Clustered column chart for number of kills per state")
 
 
 
